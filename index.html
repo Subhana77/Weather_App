@@ -12,49 +12,64 @@
 <body>
 <div class="container"></div>
 <div class="weather-app">
-<form id="search-form" class="mb-3">
-<div class="row">
-<div class="col-9">
-<input type="search" placeholder="Type a city..."
-class="form-control" id="input-city" autocomplete="off"/>
-</div>
-<div class="col-3">
-<input type="submit" value="search"
-class="btn btn-primary w-100"/>
-</div>
-</form>
-</div>
-<div class="overview"> 
-    <h1 id="city">
-    </h1>
-    <ul>
-        <li>
-            Last update: <span id="date"></span>
-        </li>
-        <li id="description">
-        </li>
-    </ul>
-    </div>
+  <form id="search-form" class="mb-3">
     <div class="row">
-        <div class="col-6">
-            <div class="d-flex weather-temperature">
-            <img src="" alt="" id="icon">
-           <strong class="temperature" id="temp"></strong><span class="units" id="celsius-link">&#176C</span>
-        </div>
-        </div>
-        <div class="col-6">
-            <ul>
-                <li>
-                    Humidity: <span id="humidity"></span>%
-                </li>
-                <li>
-                    Wind: <span id="wind"></span> km/h
-                </li>
-            </ul>
-        </div>
-        </div>
-        <div class="weather-forcast" id="forcast">
+      <div class="col-8">
+        <input
+          type="search"
+          placeholder="Type a city..."
+          class="form-control"
+          id="input-city"
+          autocomplete="off"
+        />
+      </div>
+      <div class="col-4 d-flex gap-2">
+        <input
+          type="submit"
+          value="search"
+          class="btn btn-primary w-100 btn-wide"
+        />
+        <input
+          type="button"
+          value="clear"
+          id="reset-default"
+          class="btn btn-primary w-100 btn-wide"
+        />
+      </div>
     </div>
+  </form>
+
+  <div class="overview">
+    <h1 id="city"></h1>
+    <ul>
+      <li>
+        Last update: <span id="date"></span>
+      </li>
+      <li id="description"></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div class="d-flex weather-temperature">
+        <img src="" alt="" id="icon" />
+        <strong class="temperature" id="temp"></strong
+        ><span class="units" id="celsius-link">&#176C</span>
+      </div>
+    </div>
+    <div class="col-6">
+      <ul>
+        <li>
+          Humidity: <span id="humidity"></span>%
+        </li>
+        <li>
+          Wind: <span id="wind"></span> km/h
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="weather-forcast" id="forcast"></div>
 </div>
 <div class="footer">
 <small>
