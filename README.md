@@ -32,4 +32,6 @@ This project uses an OpenWeather API key that is hard‑coded in `src/app.js` fo
 For production, you should store your API key in environment variables or a separate config file.
 
 ## Screenshot
+<img width="1832" height="942" alt="image" src="https://github.com/user-attachments/assets/fb662488-5bad-4b14-bb8f-620cd3017793" />
+
 
