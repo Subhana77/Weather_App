@@ -16,6 +16,7 @@ A simple, modern weather application that shows the current weather and a 5‑da
 - CSS3 (custom styles)
 - Bootstrap 5
 - Vanilla JavaScript
+- Axios
 - OpenWeather API (Current Weather + 5‑day/3‑hour Forecast)
 
 ## How to Run
